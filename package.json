@@ -1,0 +1,19 @@
+{
+  "name": "art-shop",
+  "version": "1.0.0",
+  "description": "Web shop for art things pet project for study frameworks",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anokata/art-shop.git"
+  },
+  "keywords": [],
+  "author": "Stanislav Tikhomirov",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/anokata/art-shop/issues"
+  },
+  "homepage": "https://github.com/anokata/art-shop#readme"
+}
