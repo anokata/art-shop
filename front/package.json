@@ -29,7 +29,13 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "@ngneat/until-destroy": "^9.0.0",
     "@ngrx/store": "^13.0.2",
+    "ngrx-store-localstorage": "^13.0.0",
+    "ngx-mask": "^13.1.1",
+    "ngx-toastr": "^14.2.1",
+    "primeicons": "^5.0.0",
+    "primeng": "^13.2.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
