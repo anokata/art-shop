@@ -5,3 +5,4 @@ Frontend: angular 12, ngrx
 Backend: 
 DB:
 
+Figma design:
