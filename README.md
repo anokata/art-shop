@@ -6,3 +6,7 @@ Backend:
 DB:
 
 Figma design:
+
+Docker cmds:
+docker-compose logs -f
+docker-compose -f docker-compose.yml up -d

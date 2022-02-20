@@ -5,23 +5,23 @@ services:
     image: node:12-alpine
     command: sh -c "npm install && npm run start"
     ports:
-      - 3000:3000
+      - 4200:4200
     working_dir: /front
     volumes:
       - ./front:/front
     environment:
-      - MYSQL_HOST: mysql
-      - MYSQL_USER: root
-      - MYSQL_PASSWORD: secret
-      - MYSQL_DB: todos
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_PASSWORD: secret
+      MYSQL_DB: todos
   
   mysql:
     image: mysql:5.7
     volumes:
       - todo-mysql-data:/var/lib/mysql
     environment: 
-      - MYSQL_ROOT_PASSWORD: secret
-      - MYSQL_DATABASE: todos
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: todos
 
 
 volumes:
