@@ -1,0 +1,6 @@
+FROM node:12-alpine
+WORKDIR /front
+EXPOSE 4200
+COPY . .
+RUN npm install
+CMD ["npm run serve"]

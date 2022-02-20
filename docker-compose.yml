@@ -2,7 +2,8 @@ version: "3.7"
 
 services:
   art-shop-front:
-    image: node:12-alpine
+    # image: node:12-alpine
+    image: artshop:latest
     command: sh -c "npm install && npm run start"
     ports:
       - 4200:4200
@@ -14,6 +15,8 @@ services:
       MYSQL_USER: root
       MYSQL_PASSWORD: secret
       MYSQL_DB: todos
+    expose:
+      - 4200
   
   mysql:
     image: mysql:5.7
