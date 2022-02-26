@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ItemsService } from 'src/services/items.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'art-shop';
+
+  constructor(
+    private itemsService: ItemsService
+  ) { }
+
+  test() {
+    this.itemsService.getList().subscribe(items => {
+      console.log(items);
+
+    })
+
+  }
 }
