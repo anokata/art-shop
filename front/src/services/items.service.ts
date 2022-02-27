@@ -11,6 +11,6 @@ export class ItemsService {
   ) { }
 
   public getList() {
-    return this.http.get('api/list');
+    return this.http.get('/api/itemsByName');
   }
 }

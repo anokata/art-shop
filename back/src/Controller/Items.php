@@ -13,7 +13,7 @@ class MyItemsController {
   }
 
   /** 
-   * @Route("/itemsByName")
+   * @Route("/api/itemsByName")
   */
   public function itemsByName(): Response {
     $list = ['test', 'values']; // from db
