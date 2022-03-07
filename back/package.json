@@ -12,6 +12,7 @@
     "scripts": {
         "dev-server": "encore dev-server",
         "dev": "encore dev",
+        "start": "symfony server:start",
         "watch": "encore dev --watch",
         "build": "encore production --progress"
     }

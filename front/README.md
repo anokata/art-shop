@@ -1,2 +1,4 @@
 # ArtShop
 
+## install
+npm install
