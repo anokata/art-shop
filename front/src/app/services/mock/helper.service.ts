@@ -14,4 +14,9 @@ export class HelperService {
     return Faker.random.words(length);
   }
 
+  generateRandomNumber(): number {
+    return Math.ceil(Math.random() * 10);
+  }
+
+
 }
