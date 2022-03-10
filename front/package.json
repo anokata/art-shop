@@ -18,7 +18,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "reload": "nginx -s reload"
+    "reload": "nginx -s reload",
+    "test-coverage": "ng test --no-watch --code-coverage"
   },
   "private": true,
   "dependencies": {
