@@ -1,7 +1,7 @@
 <div class="buttons-container">
   <button class="btn btn-outline-primary" (click)="test()">test 1</button>
-  <button class="btn btn-outline-primary" (click)="testFakeArray()">test 2</button>
-  <button class="btn btn-outline-primary" (click)="test()">test 3</button>
+  <button class="btn btn-outline-primary" (click)="testFakeArray()">test fake array</button>
+  <button class="btn btn-outline-primary" (click)="toggleCondition()">test condition</button>
   <button class="btn btn-outline-primary" (click)="test()">test 4</button>
   <button class="btn btn-outline-primary" (click)="test()">test 5</button>
   <button class="btn btn-outline-primary" (click)="test()">test 6</button>
@@ -13,3 +13,11 @@
     {{ element }}
   </div>
 </div>
+
+<h5>ng if else</h5>
+
+<div *ngIf="condition else otherBlock">if block</div>
+
+<ng-template #otherBlock>
+  <div>otherBlock</div>
+</ng-template>

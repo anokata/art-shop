@@ -10,6 +10,7 @@ import { RxHelperService } from '../services/mock/rx-helper.service';
 export class TestFrokJoinComponent implements OnInit {
 
   public testArray: string[] = ["_"];
+  public condition: boolean = true;
 
   constructor(
     private rxhelperService: RxHelperService,
@@ -28,6 +29,10 @@ export class TestFrokJoinComponent implements OnInit {
   testFakeArray() {
     this.rxhelperService.generateRandomArray()
       .subscribe(array => this.testArray = array);
+  }
+
+  toggleCondition() {
+    this.condition = !this.condition;
   }
 
 }
