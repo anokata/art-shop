@@ -24,4 +24,8 @@ export class RxHelperService {
       map((n: number) => this.helperService.generateRandomNumber()));
   }
 
+  generateRandomArray(length: number = 4): Observable<string[]> {
+    return of(this.helperService.generateRandomArray(length));
+  }
+
 }

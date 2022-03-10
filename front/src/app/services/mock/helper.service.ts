@@ -18,5 +18,13 @@ export class HelperService {
     return Math.ceil(Math.random() * 10);
   }
 
+  generateRandomArray(length: number = 4): string[] {
+    return this.generateArray(length).map(e => Faker.database.collation());
+  }
+
+  generateArray(length: number): any[] {
+    return Array.from(Array(length).keys());
+  }
+
 
 }

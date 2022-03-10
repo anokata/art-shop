@@ -9,6 +9,8 @@ import { RxHelperService } from '../services/mock/rx-helper.service';
 })
 export class TestFrokJoinComponent implements OnInit {
 
+  public testArray: string[] = ["_"];
+
   constructor(
     private rxhelperService: RxHelperService,
   ) { }
@@ -21,6 +23,11 @@ export class TestFrokJoinComponent implements OnInit {
       one: this.rxhelperService.generateRandomNumber(),
       two: this.rxhelperService.generateRandomString(),
     }).subscribe(console.log);
+  }
+
+  testFakeArray() {
+    this.rxhelperService.generateRandomArray()
+      .subscribe(array => this.testArray = array);
   }
 
 }
