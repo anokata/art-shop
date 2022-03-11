@@ -8,6 +8,11 @@
 
   <app-test-frok-join></app-test-frok-join>
 
-  <app-test-custom-template-ui>
+  <app-test-custom-template-ui [customTemplate]="newButton">
 
   </app-test-custom-template-ui>
+
+  <ng-template #newButton>
+    <label for="button">custom</label>
+    <button id="button" pButton type="button" label="Click">custom inputed template</button>
+  </ng-template>

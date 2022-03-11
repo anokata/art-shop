@@ -1,4 +1,20 @@
 <div class="custom-template-container">
   <p>test-custom-template-ui works!</p>
   <button class="btn btn-danger">tset</button>
+
+  <ng-template #estimateTemplate let-lessonsCounter="estimate">
+    <div> Approximately {{lessonsCounter}} lessons ...</div>
+  </ng-template>
+
+  <ng-container *ngTemplateOutlet="estimateTemplate;context:ctx"></ng-container>
+  <hr>
+  <ng-container *ngTemplateOutlet="estimateTemplate;context:ctx"></ng-container>
+  <hr>
+  <ng-container *ngTemplateOutlet="button; context:ctx"></ng-container>
+  <ng-container *ngTemplateOutlet="customTemplate ? customTemplate: button; context:ctx"></ng-container>
+
+  <ng-template #button let-buttonText="buttonText">
+    <button class="btn btn-danger">{{ buttonText }}</button>
+  </ng-template>
+
 </div>
