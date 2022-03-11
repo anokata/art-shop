@@ -9,7 +9,9 @@
   <app-test-frok-join></app-test-frok-join>
 
   <app-test-custom-template-ui [customTemplate]="newButton">
-
+    <ng-template [appTestCustomTemplate]>
+      custom inserted ok
+    </ng-template>
   </app-test-custom-template-ui>
 
   <ng-template #newButton>
