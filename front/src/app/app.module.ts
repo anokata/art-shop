@@ -8,10 +8,14 @@ import { ButtonModule } from 'primeng/button';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TestFrokJoinComponent } from './test-frok-join/test-frok-join.component';
+import { TabsContainerComponent } from './test-routes/tabs-container/tabs-container.component';
+import { TabListComponent } from './test-routes/tab-list/tab-list.component';
+import { TabButtonsComponent } from './test-routes/tab-buttons/tab-buttons.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 
 @NgModule({
-  declarations: [AppComponent, TestFrokJoinComponent],
+  declarations: [AppComponent, TestFrokJoinComponent, TabsContainerComponent, TabListComponent, TabButtonsComponent, MainPageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

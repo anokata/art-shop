@@ -1,12 +1,9 @@
+<nav class="menu">
+  <a class="menu__item" href="/">root</a>
+  <a class="menu__item" [href]="routesNames.main">main</a>
+  <a class="menu__item" [href]="routesNames.tabs">TABS</a>
+</nav>
+
 <main>
-  <h1>Hello stanger</h1>
-
-  <section class="test">
-    <button pButton type="button" label="Click">tse</button>
-    <p-button label="Click" (click)="test()">load items</p-button>
-    msg: {{ message }}
-  </section>
-
-  <app-test-frok-join></app-test-frok-join>
-
+  <router-outlet></router-outlet>
 </main>

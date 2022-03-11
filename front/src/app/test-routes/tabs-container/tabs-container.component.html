@@ -1,0 +1,7 @@
+<p>tabs-container works!</p>
+<nav>
+  <a routerLink="/">main</a> |
+  <a [routerLink]="'/tabs/' + routesNames.tabsList">list</a> |
+  <a [routerLink]="'/tabs/' + routesNames.tabsButtons">buttons</a>
+</nav>
+<router-outlet></router-outlet>

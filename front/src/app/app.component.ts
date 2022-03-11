@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
-import { ItemsService } from 'src/app/services/items.service';
-import * as _ from 'lodash';
-import { HelperService } from './services/mock/helper.service';
-import { RxHelperService } from './services/mock/rx-helper.service';
-import { forkJoin } from 'rxjs';
+import { RoutesNames } from 'src/app/app-routing.module';
 
 @Component({
   selector: 'app-root',
@@ -11,19 +7,10 @@ import { forkJoin } from 'rxjs';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'art-shop';
-  message = '';
+
+  public routesNames = RoutesNames;
 
   constructor(
-    private itemsService: ItemsService,
-    private helperService: HelperService,
   ) { }
 
-  test() {
-    this.itemsService.getList().subscribe(items => {
-      console.log(items);
-    });
-
-    this.message = this.helperService.generateRandomString();
-  }
 }
