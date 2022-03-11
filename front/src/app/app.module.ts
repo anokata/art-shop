@@ -12,10 +12,11 @@ import { TabsContainerComponent } from './test-routes/tabs-container/tabs-contai
 import { TabListComponent } from './test-routes/tab-list/tab-list.component';
 import { TabButtonsComponent } from './test-routes/tab-buttons/tab-buttons.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { TestCustomTemplateUiComponent } from './test-custom-template-ui/test-custom-template-ui.component';
 
 
 @NgModule({
-  declarations: [AppComponent, TestFrokJoinComponent, TabsContainerComponent, TabListComponent, TabButtonsComponent, MainPageComponent],
+  declarations: [AppComponent, TestFrokJoinComponent, TabsContainerComponent, TabListComponent, TabButtonsComponent, MainPageComponent, TestCustomTemplateUiComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

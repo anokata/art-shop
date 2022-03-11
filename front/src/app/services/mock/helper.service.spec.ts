@@ -13,4 +13,9 @@ describe('HelperService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  it('must return string', () => {
+    let typeCheck = typeof (service.generateRandomString(1)) === "string";
+    expect(typeCheck).toBe(true);
+  })
 });
