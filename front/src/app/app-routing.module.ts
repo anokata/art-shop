@@ -11,13 +11,13 @@ export const RoutesNames = {
   tabsButtons: 'buttons',
   main: 'main',
   tabs: 'tabs',
-}
+};
 
 const routes: Routes = [
   {
     path: '',
     redirectTo: RoutesNames.main,
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: RoutesNames.main,
@@ -29,18 +29,18 @@ const routes: Routes = [
     children: [
       {
         path: RoutesNames.tabsButtons,
-        component: TabButtonsComponent
+        component: TabButtonsComponent,
       },
       {
         path: RoutesNames.tabsList,
-        component: TabListComponent
-      }
-    ]
+        component: TabListComponent,
+      },
+    ],
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -1,20 +1,20 @@
-  <h1>Hello stanger</h1>
+<h1>Hello stanger</h1>
 
-  <section class="test">
-    <button pButton type="button" label="Click">tse</button>
-    <p-button label="Click" (click)="test()">load items</p-button>
-    msg: {{ message }}
-  </section>
+<section class="test">
+  <button pButton type="button" label="Click">tse</button>
+  <p-button label="Click" (click)="test()">load items</p-button>
+  msg: {{ message }}
+</section>
 
-  <app-test-frok-join></app-test-frok-join>
+<app-test-frok-join></app-test-frok-join>
 
-  <app-test-custom-template-ui [customTemplate]="newButton">
-    <ng-template [appTestCustomTemplate]>
-      custom inserted ok
-    </ng-template>
-  </app-test-custom-template-ui>
-
-  <ng-template #newButton>
-    <label for="button">custom</label>
-    <button id="button" pButton type="button" label="Click">custom inputed template</button>
+<app-test-custom-template-ui [customTemplate]="newButton">
+  <ng-template [appTestCustomTemplate]>
+    custom inserted ok
   </ng-template>
+</app-test-custom-template-ui>
+
+<ng-template #newButton>
+  <label for="button">custom</label>
+  <button id="button" pButton type="button" label="Click">custom inputed template</button>
+</ng-template>

@@ -5,19 +5,15 @@ import { RxHelperService } from '../services/mock/rx-helper.service';
 @Component({
   selector: 'app-test-frok-join',
   templateUrl: './test-frok-join.component.html',
-  styleUrls: ['./test-frok-join.component.scss']
+  styleUrls: ['./test-frok-join.component.scss'],
 })
 export class TestFrokJoinComponent implements OnInit {
-
-  public testArray: string[] = ["_"];
+  public testArray: string[] = ['_'];
   public condition: boolean = true;
 
-  constructor(
-    private rxhelperService: RxHelperService,
-  ) { }
+  constructor(private rxhelperService: RxHelperService) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   test() {
     forkJoin({
@@ -27,12 +23,12 @@ export class TestFrokJoinComponent implements OnInit {
   }
 
   testFakeArray() {
-    this.rxhelperService.generateRandomArray()
-      .subscribe(array => this.testArray = array);
+    this.rxhelperService
+      .generateRandomArray()
+      .subscribe((array) => (this.testArray = array));
   }
 
   toggleCondition() {
     this.condition = !this.condition;
   }
-
 }

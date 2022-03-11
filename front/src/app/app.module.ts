@@ -15,9 +15,17 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { TestCustomTemplateUiComponent } from './test-custom-template-ui/test-custom-template-ui.component';
 import { TestCustomTemplateDirective } from './test-custom-template-ui/test-custom-template.directive';
 
-
 @NgModule({
-  declarations: [AppComponent, TestFrokJoinComponent, TabsContainerComponent, TabListComponent, TabButtonsComponent, MainPageComponent, TestCustomTemplateUiComponent, TestCustomTemplateDirective],
+  declarations: [
+    AppComponent,
+    TestFrokJoinComponent,
+    TabsContainerComponent,
+    TabListComponent,
+    TabButtonsComponent,
+    MainPageComponent,
+    TestCustomTemplateUiComponent,
+    TestCustomTemplateDirective,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

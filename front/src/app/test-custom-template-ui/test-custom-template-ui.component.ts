@@ -15,15 +15,16 @@ import { TestCustomTemplateDirective } from './test-custom-template.directive';
   styleUrls: ['./test-custom-template-ui.component.scss'],
 })
 export class TestCustomTemplateUiComponent implements OnInit {
+  @ViewChild('button') buttonTemplate!: TemplateRef<any>;
+  @Input() customTemplate!: TemplateRef<any>;
+  @ContentChildren(TestCustomTemplateDirective)
+  public testTemplate: QueryList<TestCustomTemplateDirective> | null = null;
+
   totalEstimate = 10;
   ctx = {
     estimate: this.totalEstimate,
     buttonText: 'TestCustomTemplateUiComponent',
   };
-
-  @ViewChild('button') buttonTemplate!: TemplateRef<any>;
-  @Input() customTemplate!: TemplateRef<any>;
-  @ContentChildren(TestCustomTemplateDirective) public testTemplate: QueryList<TestCustomTemplateDirective> | null = null;
 
   constructor() {}
 
