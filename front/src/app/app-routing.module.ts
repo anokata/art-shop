@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { ItemComponent } from './items/item/item.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { TabButtonsComponent } from './test-routes/tab-buttons/tab-buttons.component';
 import { TabListComponent } from './test-routes/tab-list/tab-list.component';
@@ -37,6 +38,10 @@ const routes: Routes = [
       },
     ],
   },
+  {
+    path: 'items',
+    component: ItemComponent
+  }
 ];
 
 @NgModule({

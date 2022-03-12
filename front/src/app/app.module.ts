@@ -14,6 +14,7 @@ import { TabButtonsComponent } from './test-routes/tab-buttons/tab-buttons.compo
 import { MainPageComponent } from './main-page/main-page.component';
 import { TestCustomTemplateUiComponent } from './test-custom-template-ui/test-custom-template-ui.component';
 import { TestCustomTemplateDirective } from './test-custom-template-ui/test-custom-template.directive';
+import { ItemsModule } from './items/items.module';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { TestCustomTemplateDirective } from './test-custom-template-ui/test-cust
     StoreModule.forRoot({}, {}),
     ButtonModule,
     HttpClientModule,
+    ItemsModule,
     NgbModule,
   ],
   providers: [],
